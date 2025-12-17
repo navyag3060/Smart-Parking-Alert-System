@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Result</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🔍 Scan Result</h1>
+
+    {% if found %}
+      <p><b>Number Plate:</b> {{ plate }}</p>
+      <p><b>Owner Name:</b> {{ owner }}</p>
+      <p><b>Phone:</b> {{ phone }}</p>
+      <p class="success">✅ Alert message has been sent to the owner.</p>
+    {% else %}
+      <p><b>Number Plate Detected:</b> {{ plate }}</p>
+      <p class="error">❌ Vehicle not found in database.</p>
+    {% endif %}
+    
+    <a href="/">← Back</a>
+  </div>
+</body>
+</html>

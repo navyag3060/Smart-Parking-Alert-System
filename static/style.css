@@ -1,0 +1,83 @@
+/* Modern interactive UI for Smart Parking Alert System */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ffcc70, #ff8177);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    background: white;
+    padding: 40px 60px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .container:hover {
+    transform: translateY(-5px);
+  }
+  
+  h1 {
+    color: #ff4d6d;
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+  
+  form {
+    margin-top: 20px;
+  }
+  
+  input[type="file"] {
+    padding: 10px;
+    border: 2px dashed #ff4d6d;
+    border-radius: 10px;
+    background-color: #fff0f3;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  input[type="file"]:hover {
+    background-color: #ffe6ea;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff4d6d;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #e63950;
+    transform: scale(1.05);
+  }
+  
+  .result {
+    margin-top: 30px;
+    padding: 20px;
+    background: #fff0f3;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    color: #333;
+  }
+  
+  footer {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #555;
+  }
+  
