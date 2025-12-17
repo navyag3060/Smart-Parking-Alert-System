@@ -18,9 +18,9 @@ if not os.path.exists(UPLOAD_FOLDER):
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 # --- Twilio setup ---
 # ✅ Twilio SMS configuration (replace with your credentials)
-TWILIO_SID = "AC73a9377014a958b5a7f22def668ec0db"
-TWILIO_AUTH_TOKEN = "8e51b06963599e3c360e597e77d7b265"
-TWILIO_PHONE_NUMBER = "+17623831363"  # e.g. "+12015551234"
+TWILIO_SID = "ENTER YOUR TWILIO_SID"
+TWILIO_AUTH_TOKEN = "ENTER YOUR TWILIO_AUTH_TOKEN"
+TWILIO_PHONE_NUMBER = "ENTER YOUR TWILIO_PHONE_NUMBER"  # e.g. "+12015551234"
 
 # ------------------ Database Connection ------------------
 def get_db_connection():
@@ -107,6 +107,7 @@ def upload_image():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
 
 
 
